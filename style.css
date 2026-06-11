@@ -1,101 +1,167 @@
+/* Seletor universal que aplica estilos a todos os elementos */
 *{
+    /* Remove margem padrão de todos os elementos */
     margin:0;
+    /* Remove preenchimento padrão de todos os elementos */
     padding:0;
+    /* Define o modelo de caixa para incluir padding e border no cálculo de largura/altura */
     box-sizing:border-box;
+    /* Define a fonte padrão para Arial, Helvetica ou sans-serif */
     font-family:Arial, Helvetica, sans-serif;
 }
 
+/* Estilos para o corpo da página */
 body{
+    /* Define cor de fundo em tom bege claro */
     background:#fff7e6;
+    /* Define cor do texto em tom marrom */
     color:#4b2e1f;
+    /* Cria uma transição suave de 0.4 segundos para mudanças de propriedades */
     transition:0.4s;
 }
 
+/* Estilos para o cabeçalho da página */
 header{
+    /* Define cor de fundo em marrom */
     background:#8b5a2b;
+    /* Define cor do texto em branco */
     color:white;
+    /* Centraliza o conteúdo na horizontal */
     text-align:center;
+    /* Adiciona preenchimento interno de 25px em todos os lados */
     padding:25px;
 }
 
+/* Estilos para o botão de tema (selecionado pelo ID) */
 #temaBtn{
+    /* Adiciona margem superior de 15px */
     margin-top:15px;
+    /* Adiciona preenchimento interno: 10px vertical e 20px horizontal */
     padding:10px 20px;
+    /* Remove a borda padrão do botão */
     border:none;
+    /* Arredonda os cantos do botão em 8px */
     border-radius:8px;
+    /* Muda o cursor para apontador ao passar sobre o botão */
     cursor:pointer;
+    /* Define o tamanho da fonte em 16 pixels */
     font-size:16px;
 }
 
+/* Estilos para imagem do banner */
 .banner img{
+    /* Define a largura da imagem como 100% do container */
     width:100%;
+    /* Define a altura fixada em 300 pixels */
     height:300px;
+    /* Faz a imagem cobrir o espaço mantendo as proporções (corta se necessário) */
     object-fit:cover;
 }
 
+/* Estilos para a seção de produtos */
 .produtos{
+    /* Usa Flexbox para layout flexível */
     display:flex;
+    /* Centraliza os items horizontalmente */
     justify-content:center;
+    /* Define espaço de 25px entre cada card */
     gap:25px;
+    /* Permite que os itens quebrem para linha seguinte em telas pequenas */
     flex-wrap:wrap;
+    /* Adiciona preenchimento interno de 40px em todos os lados */
     padding:40px;
 }
 
+/* Estilos para cada card de produto */
 .card{
+    /* Define cor de fundo branca */
     background:white;
+    /* Define largura fixa de 280 pixels */
     width:280px;
+    /* Arredonda os cantos do card em 15px */
     border-radius:15px;
+    /* Esconde qualquer conteúdo que saia dos limites do card */
     overflow:hidden;
+    /* Adiciona sombra ao redor do card para profundidade */
     box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    /* Centraliza o conteúdo dentro do card */
     text-align:center;
+    /* Cria transição suave de 0.3 segundos */
     transition:0.3s;
 }
 
+/* Estilos quando o mouse passa sobre o card */
 .card:hover{
+    /* Move o card 5 pixels para cima quando ao passar do mouse */
     transform:translateY(-5px);
 }
 
+/* Estilos para a imagem dentro do card */
 .card img{
+    /* Define largura como 100% do card */
     width:100%;
+    /* Define altura fixa em 200 pixels */
     height:200px;
+    /* Faz a imagem cobrir o espaço mantendo proporções */
     object-fit:cover;
 }
 
+/* Estilos para o título (h2) dentro do card */
 .card h2{
+    /* Adiciona margem de 10px em todos os lados */
     margin:10px;
 }
 
+/* Estilos para o parágrafo dentro do card */
 .card p{
+    /* Adiciona preenchimento horizontal de 15px */
     padding:0 15px;
 }
 
+/* Estilos para o preço (span) dentro do card */
 .card span{
+    /* Torna o elemento span uma caixa de bloco */
     display:block;
+    /* Adiciona margem de 15px em todos os lados */
     margin:15px;
+    /* Deixa o texto em negrito */
     font-weight:bold;
+    /* Define cor do texto em marrom */
     color:#8b5a2b;
 }
 
+/* Estilos para o rodapé da página */
 footer{
+    /* Centraliza o conteúdo na horizontal */
     text-align:center;
+    /* Adiciona preenchimento interno de 20px em todos os lados */
     padding:20px;
+    /* Define cor de fundo em marrom */
     background:#8b5a2b;
+    /* Define cor do texto em branco */
     color:white;
 }
 
-/* Tema Escuro */
+/* Estilos para o modo escuro (classe dark) */
 
+/* Estilos aplicados quando o modo escuro está ativo */
 .dark{
+    /* Define cor de fundo em cinza muito escuro quase preto */
     background:#1b1b1b;
+    /* Define cor do texto em branco para contraste */
     color:white;
 }
 
+/* Estilos para os cards quando o modo escuro está ativo */
 .dark .card{
+    /* Define cor de fundo do card em cinza escuro */
     background:#2b2b2b;
 }
 
+/* Estilos para header e footer quando o modo escuro está ativo */
 .dark header,
 .dark footer{
+    /* Define cor de fundo em preto puro */
     background:#111;
 }
 
